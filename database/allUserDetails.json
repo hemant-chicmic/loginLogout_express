@@ -1,0 +1,24 @@
+[
+    {
+        "name": "Hemant Singh",
+        "userName": "hsingh",
+        "email": "hsingh05@chicmic.com",
+        "age": 23,
+        "address": "kanpur",
+        "password": "$2b$10$GE9w8ZwBCEPK1KIt9XYe5.iNrB6Nzna3f0.4dLG.Sk2YOurwduEwK",
+        "confirmPassword": "$2b$10$GE9w8ZwBCEPK1KIt9XYe5.iNrB6Nzna3f0.4dLG.Sk2YOurwduEwK",
+        "localpassword": "hsr@12",
+        "userID": 1721296544870
+    },
+    {
+        "name": "Hemant Singh",
+        "userName": "hsadsdsingh",
+        "email": "hsiscdsngh05@chicmic.com",
+        "age": 23,
+        "address": "kanpur",
+        "password": "$2b$10$h6IVNCIQcjShvfzn.PVZSe.xPn9yyqeg9HiNCiE7bD8S6rTsMSnyO",
+        "confirmPassword": "$2b$10$h6IVNCIQcjShvfzn.PVZSe.xPn9yyqeg9HiNCiE7bD8S6rTsMSnyO",
+        "localpassword": "okok@12",
+        "userID": 1721297028562
+    }
+]
