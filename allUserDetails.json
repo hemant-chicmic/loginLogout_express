@@ -5,86 +5,20 @@
         "email": "hsingh05@chicmic",
         "age": 23,
         "city": "kanpur",
-        "password": "$2b$10$k70g8maNMAVXZ6EJ40KTZOKEc9lZ58vkDaI4mXIIZFU46BgnhhPwK",
-        "confirmPassword": "$2b$10$k70g8maNMAVXZ6EJ40KTZOKEc9lZ58vkDaI4mXIIZFU46BgnhhPwK",
-        "localpassword": "123@hem",
-        "_id": 1721207804311
+        "password": "$2b$10$rrLEJcdnkV0uLGcnksV12un7gszztDFxEDHaDEs/zhjuIYpUgl2SC",
+        "confirmPassword": "$2b$10$rrLEJcdnkV0uLGcnksV12un7gszztDFxEDHaDEs/zhjuIYpUgl2SC",
+        "localpassword": "hem@12",
+        "userID": 1721278454986
     },
     {
-        "name": "Pushpendra Singh",
-        "userName": "pushpendraSinghRajwat",
-        "email": "psrajwat@gg",
+        "name": "He Si",
+        "userName": "hcfersingh",
+        "email": "hsdfveingh05@chicmic",
         "age": 23,
         "city": "kanpur",
-        "password": "$2b$10$bb4kqjIKs871Fprp/1h2MO0lc4ttr.btgbX0NPcOvPuEklmZqaUQC",
-        "confirmPassword": "$2b$10$bb4kqjIKs871Fprp/1h2MO0lc4ttr.btgbX0NPcOvPuEklmZqaUQC",
-        "localpassword": "psr@12",
-        "_id": 1721213966083
-    },
-    {
-        "name": "Pushpendra Singh",
-        "userName": "dfvdfd",
-        "email": "dfvdf@gg",
-        "age": 23,
-        "city": "kanpur",
-        "password": "$2b$10$I0sMb2vxp8vb8vanJlkI3.ismcJ.Pl8aId6CMBK1YfaPj9IjhbZ9a",
-        "confirmPassword": "$2b$10$I0sMb2vxp8vb8vanJlkI3.ismcJ.Pl8aId6CMBK1YfaPj9IjhbZ9a",
-        "localpassword": "psr@12",
-        "_id": 1721214175378
-    },
-    {
-        "name": "dfvdfv Singh",
-        "userName": "vdfdf",
-        "email": "dfvfd@gg",
-        "age": 23,
-        "city": "kanpur",
-        "password": "$2b$10$G9wxmUk4aameSRT6gXdS5uKwsVyjhdExfqjlF4Azsw8LVxHVPANIa",
-        "confirmPassword": "$2b$10$G9wxmUk4aameSRT6gXdS5uKwsVyjhdExfqjlF4Azsw8LVxHVPANIa",
-        "localpassword": "psr@12",
-        "_id": 1721214205203
-    },
-    {
-        "name": "dfvdfv Singh",
-        "userName": "cd",
-        "email": "dcdfcfvfd@gg",
-        "age": 23,
-        "city": "kanpur",
-        "password": "$2b$10$.NhKQGDpozezTmhpPR.TAulnGSYzRavx/RDKMPEq0J4MyLEJlEABG",
-        "confirmPassword": "$2b$10$.NhKQGDpozezTmhpPR.TAulnGSYzRavx/RDKMPEq0J4MyLEJlEABG",
-        "localpassword": "psr@12",
-        "_id": 1721220150999
-    },
-    {
-        "name": "dfvdfv Singh",
-        "userName": "cD",
-        "email": "dcdfCfvfd@gg",
-        "age": 23,
-        "city": "kanpur",
-        "password": "$2b$10$wbiler7BUh7uVFO4IxAL/OComdLuEPGkF/3Kg1drXAPRmJRMieTYK",
-        "confirmPassword": "$2b$10$wbiler7BUh7uVFO4IxAL/OComdLuEPGkF/3Kg1drXAPRmJRMieTYK",
-        "localpassword": "psr@12",
-        "_id": 1721221572052
-    },
-    {
-        "name": "dfvdfv Singh",
-        "userName": "CD",
-        "email": "dcdfCfvfd@gG",
-        "age": 23,
-        "city": "kanpur",
-        "password": "$2b$10$R9yTL1DdMpJ.K.qPNBCGle9oJroQB7fcrn.Oy0OqsnaRUsNGFt/v2",
-        "confirmPassword": "$2b$10$R9yTL1DdMpJ.K.qPNBCGle9oJroQB7fcrn.Oy0OqsnaRUsNGFt/v2",
-        "localpassword": "psr@12",
-        "_id": 1721221586213
-    },
-    {
-        "name": "dfvdfv Singh",
-        "userName": "Cd",
-        "email": "DcdfCfvfd@gG",
-        "age": 23,
-        "city": "kanpur",
-        "password": "$2b$10$zwcGN4ZMW3iQcfl.8BBUXetmlX0FZDFbbjBxQBPSGwXWWJDzUVff2",
-        "confirmPassword": "$2b$10$zwcGN4ZMW3iQcfl.8BBUXetmlX0FZDFbbjBxQBPSGwXWWJDzUVff2",
-        "localpassword": "psr@12",
-        "_id": 1721221597780
+        "password": "$2b$10$/jwMq8qDLdkMtErkjJeeP.h.0xIPSO8aKBKCLn0KjHXIB4mMtsAze",
+        "confirmPassword": "$2b$10$/jwMq8qDLdkMtErkjJeeP.h.0xIPSO8aKBKCLn0KjHXIB4mMtsAze",
+        "localpassword": "hem@12",
+        "userID": 1721283565064
     }
 ]

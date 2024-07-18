@@ -58,7 +58,7 @@ async function saveAllUserDetailsData(allUserDetailsData) {
 
 function generateAccessToken(jwtPayloadObject) 
 {
-    return jwt.sign(jwtPayloadObject, process.env.TOKEN_SECRET, { algorithm: 'HS256' } , { expiresIn: '3600s' });
+    return jwt.sign(jwtPayloadObject, process.env.TOKEN_SECRET, { algorithm: 'HS256' , expiresIn: '300s' });
 }
 
 
@@ -83,30 +83,39 @@ app.get('/', (req, res) => {
     res.send("Hello World");
 });
 
-// app.get('/user/:username', authenticateToken , asyncHandler(async (req, res) => {
-//     const enteredUsername = req.params.username;
-//     const allUserDetailsData = await readAllUserDetailsDataFile();
-//     const user = allUserDetailsData.find((user) => user.userName === enteredUsername);
-//     if (!user) 
-//     {
-//         res.status(400).json({
-//             status: 400,
-//             message: "User doesn't exist",
-//         });
-//         return;
-//     }
-//     res.status(200).json({
-//         status: 200,
-//         success: true,
-//         message: " User exists ",
-//         user: user ,
+
+
+
+app.get('/user/:username', authenticateToken , asyncHandler(async (req, res) => {
+    const enteredUsername = req.params.username;
+    const allUserDetailsData = await readAllUserDetailsDataFile();
+    const user = allUserDetailsData.find((user) => user.userName === enteredUsername);
+    if (!user) 
+    {
+        res.status(400).json({
+            status: 400,
+            message: "User doesn't exist",
+        });
+        return;
+    }
+    res.status(200).json({
+        status: 200,
+        success: true,
+        message: " User details fetched Successfully ",
+        user: user ,
+    });
+}));
+
+
+
+
+
+// app.get( '/userDetails' , authenticateToken , asyncHandler((req, res) => {
+//     res.json({ 
+//         message: "You are authorized to access this" ,
+//         user : req.user
 //     });
-// }));
-
-
-app.get( '/userDetails' , authenticateToken , asyncHandler((req, res) => {
-    res.json({ message: "You are authorized to access this" });
-})) ; 
+// })) ; 
 
 
 
@@ -114,7 +123,7 @@ app.get( '/userDetails' , authenticateToken , asyncHandler((req, res) => {
 app.post('/createUser', asyncHandler(async (req, res) => {
     const newUser = req.body;
     newUser.localpassword = newUser.password ; 
-    newUser._id = Date.now();
+    newUser.userID = Date.now();
     const allUserDetailsData = await readAllUserDetailsDataFile();
     const isnewUsernameExist = allUserDetailsData.some((user) => user.userName === newUser.userName || user.email === newUser.email);
     if (isnewUsernameExist) 
@@ -143,7 +152,8 @@ app.post('/createUser', asyncHandler(async (req, res) => {
     await saveAllUserDetailsData(allUserDetailsData);
 
     const jwtPayloadObject = {
-        username : newUser.userName ,
+        userID : newUser.userID ,
+        userName : newUser.userName ,
         email : newUser.email
     }
     const jwtToken = generateAccessToken( jwtPayloadObject ) ; 
@@ -183,8 +193,9 @@ app.post( '/userLogin' , asyncHandler(async(req , res) => {
     }
 
     const jwtPayloadObject = {
-        username : userInDB.userName ,
-        email : userInDB.email
+        userID : newUser.userID ,
+        userName : newUser.userName ,
+        email : newUser.email
     }
     const jwtToken = generateAccessToken( jwtPayloadObject ) ; 
 
